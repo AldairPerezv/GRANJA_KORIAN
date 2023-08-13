@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LAS RECETAS MAS RICAS CON NUESTROS HUEVOS DE CODORNIZ</title>
+  <style>
+    .banner {
+      background-color: #ff8800;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    .banner p {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .banner a {
+      color: #716b67;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <br>
+    <br>
+    <br>
+    <h1 id="bannerTitle">LAS RECETAS MAS RICAS CON NUESTROS HUEVOS DE CODORNIZ</h1>
+    </br>
+    <br>
+    <br>
+  </div>
+  
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 3%;">
+        <p id="bannerText" style="color: gray; margin-bottom: 20px;">HUEVOS BENEDICT CON MUFFINS</p>
+        <div style="text-align: center;">
+            <p style="font-size: 14px; color: rgb(255, 145, 0); margin-bottom: 10px;">- Ingredientes</p>
+            <p style="font-size: 14px; color: rgb(255, 145, 0); margin-bottom: 10px;">- Preparación</p>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 3%;">
+        <p id="bannerText" style="color: gray; margin-bottom: 20px;">HUEVOS CON ENSALADA DE ATÚN</p>
+        <div style="text-align: center;">
+            <p style="font-size: 14px; color: rgb(255, 145, 0); margin-bottom: 10px;">- Ingredientes</p>
+            <p style="font-size: 14px; color: rgb(255, 145, 0); margin-bottom: 10px;">- Preparación</p>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p id="bannerText" style="color: gray; margin-bottom: 20px;">SPAGHETTI A LA CARBONARA</p>
+        <div style="text-align: center;">
+            <p style="font-size: 14px; color: rgb(255, 145, 0); margin-bottom: 10px;">- Ingredientes</p>
+            <p style="font-size: 14px; color: rgb(255, 145, 0); margin-bottom: 10px;">- Preparación</p>
+        </div>
+    </div>
+</div>
+
+    <!-- INICIO DEL BANNER -->
+<div style="background-color: #F7DC6F; text-align: left; padding: 20px;">
+    <h2 style="font-size: 24px; font-weight: bold;">INFORMACION DE CONTACTO</h2>
+    <div style="display: flex; flex-direction: row;">
+      <div style="flex: 1;">
+        <p style="font-size: 18px;"><strong>TELEFONO:</strong> 912-123-543</p>
+        <p style="font-size: 18px;"><strong>DIRECCION:</strong> Calle Falsa 123</p>
+      </div>
+      <div style="flex: 1;">
+        <p style="font-size: 18px;">° NOSOTROS</p>
+        <p style="font-size: 18px;">° SOSTENIBILIDAD</p>
+        <p style="font-size: 18px;">° PREGUNTAS FRECUENTES</p>
+        <p style="font-size: 18px;">° CONTACTO</p>
+      </div>
+      <div style="flex: 1;">
+        <p style="font-size: 18px;">° PRODUCTOS</p>
+        <p style="font-size: 18px;">° HUEVOS</p>
+    </div>
+  </div>
+  <!-- FIN DEL BANNER -->
+    
+  <!-- Agrega nuevos códigos debajo de este comentario -->
+  <script>
+    // Obtén los elementos del banner
+    const bannerTitle = document.querySelector('#bannerTitle');
+    const bannerText = document.querySelector('#bannerText');
+    const bannerLink = document.querySelector('#bannerLink');
+
+    // Agrega eventos a los elementos para que se puedan editar
+    bannerTitle.addEventListener('click', () => {
+      const newTitle = prompt('Ingresa el nuevo título:');
+      bannerTitle.textContent = newTitle;
+    });
+
+    bannerText.addEventListener('click', () => {
+      const newText = prompt('Ingresa el nuevo texto:');
+      bannerText.textContent = newText;
+    });
+
+    bannerLink.addEventListener('click', () => {
+      const newLink = prompt('Ingresa el nuevo enlace:');
+      bannerLink.href = newLink;
+    });
+  </script>
+</body>
+</html>
