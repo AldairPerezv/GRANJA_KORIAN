@@ -13,7 +13,7 @@
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
                     <div class="flex-shrink-0">
-                    <img class="h-8 w-8" src="Imagenes/logo.png" alt="Your Company">
+                    <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -42,7 +42,6 @@
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">Open user menu</span>
                             <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-
                         </button>
                     </div>
                 
@@ -56,6 +55,7 @@
                 <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100", Not Active: "" -->
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Mi Perfil</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Configuracion</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Cerras Secion</a>
                 </div>
               </div>
@@ -107,64 +107,74 @@
         </div>
             <div class="mt-3 space-y-1 px-2">
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Mi Perfil</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Configuracion</a>
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Cerrar Sesion</a>
             </div>
+         </div>
         </div>
-      </div>
-    </nav>
-    </nav>
-  
-    <header class="bg-white shadow">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Granja Korian</h1>
-      </div>
-    </header>
-    <main>
-      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <!-- Your content -->
-      </div>
-    </main>
-  </div>
-
-  <!-- LA IMAGEN DEL BANNER PRINCIPAL-->
-  <div>
-  <img src="Imagenes/banner1.png" alt="">
-  </div>
-
-<!--PARTE DE LAS OFERTAS-->
-<div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-  <h1 class="text-3xl font-bold tracking-tight text-orange-500">OFERTAS QUE SE ACABAN...!</h1>
-  <br/>
-  <h5 class="text-2xl text-black-500">Aprovecha estas ofertas que tenemos para ti...</h5>
-</div> 
-<div class="flex justify-center items-center h-screen">
-  <div class="grid grid-cols-3 gap-8">
-      <div class="text-center">
-          <img class="mx-auto w-64 h-64 rounded-full" src="Imagenes/malla_huevos.png" alt="Imagen 1">
-          <p class="mt-4 text-lg">Huevos de Codorniz</p>
-          <p class="mt-4 text-lg">Por Malla</p>
-          <p class="mt-4 text-lg">S/.10 soles</p>
-          <button class="mt-2 px-4 py-2 bg-green-500 text-white rounded">Agregar al Carrito</button>
-      </div>
-      <div class="text-center">
-          <img class="mx-auto w-64 h-64 rounded-full" src="Imagenes/taper_huevo.png" alt="Imagen 2">
-          <p class="mt-4 text-lg">Huevos de Codorniz.</p>
-          <p class="mt-4 text-lg">Por taper</p>
-          <p class="mt-4 text-lg">S/.12 soles</p>
-          <button class="mt-2 px-4 py-2 bg-green-500 text-white rounded">Agregar al Carrito</button>
-      </div>
-      <div class="text-center">
-          <img class="mx-auto w-64 h-64 rounded-full" src="Imagenes/haba_Huevo.png" alt="Imagen 3">
-          <p class="mt-4 text-lg">Huevos de Codorniz</p>
-          <p class="mt-4 text-lg">Por Millar</p>
-          <p class="mt-4 text-lg">S/.170 soles</p>
-          <button class="mt-2 px-4 py-2 bg-green-500 text-white rounded">Agregar al Carrito</button>
-      </div>
-  </div>
-</div>
-
-<div>
-<h3 class="bg-orange-500 text-4xl text-white text-center">Para Mayor informacion</h3>
-</div>
+        </nav>
+        <main>
+            <div class="bg-gray-100">
+                <div class="flex p-8">
+                    <div class="w-1/3 bg-white rounded-lg shadow-md p-8 mr-8">
+                        <h2 class="text-xl font-semibold mb-4">Información del Cliente</h2>
+                        <div class="mb-4 flex items-center">
+                            <p class="text-sm font-medium text-gray-600 mr-2">Identificación:</p>
+                            <p class="text-gray-800">123456789</p>
+                            <button class="ml-auto text-blue-500 hover:underline">Editar</button>
+                        </div>
+                        <p class="text-sm font-medium text-gray-600">Correo Electrónico:</p>
+                        <p class="text-gray-800 mb-2">Omarcito_el_terror_de_las_abuelitas@gmail.com</p>
+                        <p class="text-sm font-medium text-gray-600">Nombres:</p>
+                        <p class="text-gray-800 mb-2">Omar</p>
+                        <p class="text-sm font-medium text-gray-600">Apellidos:</p>
+                        <p class="text-gray-800 mb-2">Valerio</p>
+                        <p class="text-sm font-medium text-gray-600">Documento de Identidad:</p>
+                        <p class="text-gray-800 mb-2">1234567890</p>
+                        <p class="text-sm font-medium text-gray-600">Número Telefónico:</p>
+                        <p class="text-gray-800">555-123-4567</p>
+                    </div>
+                    <div class="w-1/3 bg-white rounded-lg shadow-md p-8 mr-8">
+                        <h2 class="text-xl font-semibold mb-4">Opciones de Entrega</h2>
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-600">Entrega:</p>
+                            <div class="flex space-x-4 mt-2">
+                                <button class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">Envío a Domicilio</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">Recoger en Tienda</button>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="direccion" class="block text-sm font-medium text-gray-600">Dirección de Entrega:</label>
+                            <input type="text" id="direccion" name="direccion" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="fecha" class="block text-sm font-medium text-gray-600">Fecha de Entrega:</label>
+                            <input type="date" id="fecha" name="fecha" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+                        </div>
+                        <img src="Imagenes/haba_Huevo.png" alt="Producto" class="mb-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-green-600">Continuar</button>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-4 w-1/4 mx-2">
+                        <h2 class="text-xl font-semibold mb-4">Resumen de Compra</h2>
+                        <p class="text-sm font-medium text-gray-600">Descripción:</p>
+                        <p class="text-gray-800 mb-1">HUEVOS</p>
+                        <p class="text-gray-800 mb-1">Huevos de Codorniz</p>
+                        <p class="text-gray-800 mb-1">Por Millar</p>
+                        <p class="text-sm font-medium text-gray-600">Precio:</p>
+                        <p class="text-gray-800 mb-1">S/.170.00 soles</p>
+                        <div class="flex mb-2">
+                            <img src="Imagenes/haba_Huevo.png" alt="Producto" class="mr-2">
+                        </div>
+                        <p class="text-sm font-medium text-gray-600">Subtotal:</p>
+                        <p class="text-gray-800 mb-2">S/.1700.00 soles</p>
+                        <p class="text-sm font-medium text-gray-600">Despacho:</p>
+                        <p class="text-gray-800 mb-2">S/.10.00 soles</p>
+                        <p class="text-lg font-semibold text-gray-800">Total:</p>
+                        <p class="text-xl font-semibold text-blue-500">S/.180.00</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

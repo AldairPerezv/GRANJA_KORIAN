@@ -13,7 +13,7 @@
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
                     <div class="flex-shrink-0">
-                    <img class="h-8 w-8" src="Imagenes/logo.png" alt="Your Company">
+                    <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -42,7 +42,6 @@
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">Open user menu</span>
                             <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-
                         </button>
                     </div>
                 
@@ -56,6 +55,7 @@
                 <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100", Not Active: "" -->
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Mi Perfil</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Configuracion</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Cerras Secion</a>
                 </div>
               </div>
@@ -107,64 +107,38 @@
         </div>
             <div class="mt-3 space-y-1 px-2">
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Mi Perfil</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Configuracion</a>
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Cerrar Sesion</a>
             </div>
+         </div>
         </div>
-      </div>
-    </nav>
-    </nav>
-  
-    <header class="bg-white shadow">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Granja Korian</h1>
-      </div>
-    </header>
-    <main>
-      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <!-- Your content -->
-      </div>
-    </main>
-  </div>
-
-  <!-- LA IMAGEN DEL BANNER PRINCIPAL-->
-  <div>
-  <img src="Imagenes/banner1.png" alt="">
-  </div>
-
-<!--PARTE DE LAS OFERTAS-->
-<div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-  <h1 class="text-3xl font-bold tracking-tight text-orange-500">OFERTAS QUE SE ACABAN...!</h1>
-  <br/>
-  <h5 class="text-2xl text-black-500">Aprovecha estas ofertas que tenemos para ti...</h5>
-</div> 
-<div class="flex justify-center items-center h-screen">
-  <div class="grid grid-cols-3 gap-8">
-      <div class="text-center">
-          <img class="mx-auto w-64 h-64 rounded-full" src="Imagenes/malla_huevos.png" alt="Imagen 1">
-          <p class="mt-4 text-lg">Huevos de Codorniz</p>
-          <p class="mt-4 text-lg">Por Malla</p>
-          <p class="mt-4 text-lg">S/.10 soles</p>
-          <button class="mt-2 px-4 py-2 bg-green-500 text-white rounded">Agregar al Carrito</button>
-      </div>
-      <div class="text-center">
-          <img class="mx-auto w-64 h-64 rounded-full" src="Imagenes/taper_huevo.png" alt="Imagen 2">
-          <p class="mt-4 text-lg">Huevos de Codorniz.</p>
-          <p class="mt-4 text-lg">Por taper</p>
-          <p class="mt-4 text-lg">S/.12 soles</p>
-          <button class="mt-2 px-4 py-2 bg-green-500 text-white rounded">Agregar al Carrito</button>
-      </div>
-      <div class="text-center">
-          <img class="mx-auto w-64 h-64 rounded-full" src="Imagenes/haba_Huevo.png" alt="Imagen 3">
-          <p class="mt-4 text-lg">Huevos de Codorniz</p>
-          <p class="mt-4 text-lg">Por Millar</p>
-          <p class="mt-4 text-lg">S/.170 soles</p>
-          <button class="mt-2 px-4 py-2 bg-green-500 text-white rounded">Agregar al Carrito</button>
-      </div>
-  </div>
-</div>
-
-<div>
-<h3 class="bg-orange-500 text-4xl text-white text-center">Para Mayor informacion</h3>
-</div>
+        </nav>
+        <main>
+            <div class="bg-gray-100">
+                <div class="flex p-8">
+                    <div class="w-1/3 bg-white rounded-lg shadow-md p-8 mr-8">
+                        <img src="Imagenes/huevo.png" alt="Huevos 1" class="w-16 h-16 rounded-lg cursor-pointer">
+                        <br/>
+                        <img src="Imagenes/huevo1.png" alt="Huevos 2" class="w-16 h-16 rounded-lg cursor-pointer">
+                        <br/>
+                        <img src="Imagenes/malla_huevo.jpg" alt="Huevos 3" class="w-16 h-16 rounded-lg cursor-pointer">
+                    </div>
+                    <div class="w-1/3 bg-white rounded-lg shadow-md p-8 mr-8">
+                        <div class="w-1/2 bg-white rounded-lg shadow-md p-4 mx-4">
+                            <div class="flex justify-center mb-8">
+                                <img src="Imagenes/malla_huevo.jpg" alt="Huevos Seleccionados" class="w-48 h-48 rounded-lg">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-lg font-semibold mr-4">S/.10.00 soles</span>
+                        <button class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-600">-</button>
+                        <span class="text-gray-800 mx-2">1</span>
+                        <button class="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-600">+</button>
+                    </div>
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">Comprar</button>
+                
+        </main>
+    </div>
 </body>
 </html>
