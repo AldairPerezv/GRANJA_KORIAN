@@ -1,117 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>NUESTROS PRODUCTOS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .banner {
-      background-color: #ff8800;
-      color: #333;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .banner h1 {
-      font-size: 40px;
-      margin-bottom: 0;
-    }
-
-    .banner p {
-      font-size: 20px;
-      margin-top: 0;
-    }
-
-    .banner a {
-      color: #716b67;
-      font-size: 20px;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granja Korian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200">
-  <div class="banner">
-    <br>
-    <br>
-    <br>
-    <h1 id="bannerTitle">NUESTROS PRODUCTOS</h1>
-    <br>
-    <br>
-  </div>
-  
-  <div class="flex flex-col items-center mt-8">
-    <p id="bannerText" class="text-orange-500">HUEVOS POR MALLA</p>
-    <div class="flex flex-col items-start mt-4">
-      <p class="text-gray-500 text-sm">- 25 unidades</p>
-      <p class="text-gray-500 text-sm">- Ricos en Vitamina A, B y D</p>
-      <p class="text-gray-500 text-sm">- Contiene Hierro, Calcio, Magnesio, etc</p>
-    </div>
-    <p class="text-center mt-4"><a href="#" class="text-gray-700 text-sm underline">MÁS INFORMACIÓN</a></p>
-  </div>
-  
-  <div class="flex flex-col items-center mt-8">
-    <p id="bannerText" class="text-orange-500">HUEVOS POR TAPER</p>
-    <div class="flex flex-col items-start mt-4">
-      <p class="text-gray-500 text-sm">- 50 unidades</p>
-      <p class="text-gray-500 text-sm">- Ricos en Vitamina A, B y D</p>
-      <p class="text-gray-500 text-sm">- Contiene Hierro, Calcio, Magnesio, etc</p>
-    </div>
-    <p class="text-center mt-4"><a href="#" class="text-gray-700 text-sm underline">MÁS INFORMACIÓN</a></p>
-  </div>
-  
-  <div class="flex flex-col items-center mt-8">
-    <p id="bannerText" class="text-orange-500">HUEVOS POR MILLARES</p>
-    <div class="flex flex-col items-start mt-4">
-      <p class="text-gray-500 text-sm">- 1000 unidades</p>
-      <p class="text-gray-500 text-sm">- Ricos en Vitamina A, B y D</p>
-      <p class="text-gray-500 text-sm">- Contiene Hierro, Calcio, Magnesio, etc</p>
-    </div>
-    <p class="text-center mt-4"><a href="#" class="text-gray-700 text-sm underline">MÁS INFORMACIÓN</a></p>
-  </div>
-  
-  
-    <!-- INICIO DEL BANNER -->
-<div class="bg-orange-500 text-left p-4 mt-8">
-    <h2 class="text-2xl font-bold">INFORMACION DE CONTACTO</h2>
-    <div class="flex flex-row mt-4">
-      <div class="flex-1">
-        <p class="text-lg"><strong>TELEFONO:</strong> 912-123-543</p>
-        <p class="text-lg"><strong>DIRECCION:</strong> Calle Falsa 123</p>
-      </div>
-      <div class="flex-1">
-        <p class="text-lg">° NOSOTROS</p>
-        <p class="text-lg">° SOSTENIBILIDAD</p>
-        <p class="text-lg">° PREGUNTAS FRECUENTES</p>
-        <p class="text-lg">° CONTACTO</p>
-      </div>
-      <div class="flex-1">
-        <p class="text-lg">° PRODUCTOS</p>
-        <p class="text-lg">° HUEVOS</p>
-    </div>
-  </div>
-  <!-- FIN DEL BANNER -->
-    
-  <!-- Agrega nuevos códigos debajo de este comentario -->
-  <script>
-    // Obtén los elementos del banner
-    const bannerTitle = document.querySelector('#bannerTitle');
-    const bannerText = document.querySelector('#bannerText');
-    const bannerLink = document.querySelector('#bannerLink');
-
-    // Agrega eventos a los elementos para que se puedan editar
-    bannerTitle.addEventListener('click', () => {
-      const newTitle = prompt('Ingresa el nuevo título:');
-      bannerTitle.textContent = newTitle;
-    });
-
-    bannerText.addEventListener('click', () => {
-      const newText = prompt('Ingresa el nuevo texto:');
-      bannerText.textContent = newText;
-    });
-
-    bannerLink.addEventListener('click', () => {
-      const newLink = prompt('Ingresa el nuevo enlace:');
-      bannerLink.href = newLink;
-    });
-  </script>
-</body>
-</html>
+<body class="h-full">
+    <div class="min-h-full">
+        <nav class="bg-orange-500">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center">
+                      <div class="flex-shrink-0">
+                        <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                    </div>
+        
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Nosotros</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Productos</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Recetas</a>
+                        </div>
+                            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="bg-white shadow">
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">NUESTROS PRODUCTOS</h1>
+            </div>
+        </header>
+        <main>
+            <div class="bg-gray-100">
+                <div class="flex justify-center items-center h-screen">
+                    <div class="max-w-md w-full mx-auto">
+                        <div class="bg-white rounded-lg shadow-md p-4 space-y-4 border border-gray-500">
+                            <div class="flex border border-gray-500">
+                                <img src="IMAGENES/HUEVOS POR MALLA.png" alt="Producto 1" class="w-40 h-40 object-cover rounded-lg mr-4">
+                                <div>
+                                    <h2 class="text-lg font-semibold">HUEVOS POR MALLA</h2>
+                                    <p class="text-gray-600">° Contiene 25 unidades</p>
+                                    <p class="text-gray-600">° Ricos en A,B y D</p>
+                                    <p class="text-gray-600">° Contiene Alto contenido Proteico</p>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-500">
+                                <img src="IMAGENES/HUEVOS POR TAPER.png" alt="Producto 2" class="w-40 h-40 object-cover rounded-lg mr-4">
+                                <div>
+                                    <h2 class="text-lg font-semibold">HUEVOS POR TAPER</h2>
+                                    <p class="text-gray-600">° Contiene 50 unidades</p>
+                                    <p class="text-gray-600">° Ricos en A,B y D</p>
+                                    <p class="text-gray-600">° Contiene Alto contenido Proteico</p>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-500">
+                                <img src="IMAGENES/HUEVOS POR MILLARES.png" alt="Producto 3" class="w-40 h-40 object-cover rounded-lg mr-4">
+                                <div>
+                                    <h2 class="text-lg font-semibold">HUEVOS POR MILLARES</h2>
+                                    <p class="text-gray-600">° Contiene 25 unidades</p>
+                                    <p class="text-gray-600">° Ricos en A,B y D</p>
+                                    <p class="text-gray-600">° Contiene Alto contenido Proteico</p>
+                                </div>
+                            </main>
+                        </div>
+                    </body>
+                    </main>
+                    <div class="bg-orange-500 text-gray-100">
+                        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex flex-wrap justify-between">
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Teléfono</h2>
+                            <p class="text-gray-400">+51 923 456 781</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Dirección</h2>
+                            <p class="text-gray-400">Av. Ciudad Ficticia</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Nosotros</h2>
+                            <p class="text-gray-400">Conoce más sobre nosotros</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Sostenibilidad</h2>
+                            <p class="text-gray-400">Conoce nuestras prácticas sostenibles</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Preguntas Frecuentes</h2>
+                            <p class="text-gray-400">Resolvemos tus dudas</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Contactos</h2>
+                            <p class="text-gray-400">Escríbenos o llámanos</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Productos</h2>
+                            <p class="text-gray-400">Conoce nuestros productos</p>
+                          </div>
+                          <div class="w-full md:w-1/2 lg:w-1/4">
+                            <h2 class="text-xl font-bold">Huevos</h2>
+                            <p class="text-gray-400">Conoce nuestras variedades de huevos</p>
+                            <div>
+                                <div class="w-full md:w-1/2 lg:w-1/4 flex items-end justify-end">
+                                  <div class="bg-white p-4 rounded-lg">
+                                    <h2 class="text-xl font-bold mb-4 text-black">Libro de Reclamaciones</h2>
+                                    <p class="text-gray-400 mb-4 text-black">Realiza tus reclamos aquí</p>
+                                    <img src="IMAGENES/LIBRO DE RECLAMACIONES.png" alt="Imagen referencial" class="w-full">
+                                  </div>
+                                </div>
+                              </div>
+                              
+                    
