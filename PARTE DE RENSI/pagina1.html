@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granja Korian</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheat" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="h-full">
     <div class="min-h-full">
@@ -127,9 +131,95 @@
   </div>
 
   <!-- LA IMAGEN DEL BANNER PRINCIPAL-->
-  <div>
-  <img src="Imagenes/banner1.png" alt="">
+  <div class="header-content container">
+
+      <div class="swiper mySwiper-1">
+          <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="slider">
+                    <div class="slider-txt">
+                        <h1>HUEVOS PAJEROS</h1>
+                        <P>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi dolorum alias dicta? Dolores, suscipit delectus. Vero magni perspiciatis minus quo provident eos amet odio quaerat odit, cum delectus aliquid!
+                        </P>
+                        <div class="botones">
+                            <a href="#" class="btn-1">Compras</a>
+                            <a href="#" class="btn-1">Menu</a>
+                        </div>
+                    </div>
+                    <div class="slider-img">
+                        <img src="Imagenes/malla_huevo.jpg" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider">
+                    <div class="slider-txt">
+                        <h1>TORTA</h1>
+                        <P>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi dolorum alias dicta? Dolores, suscipit delectus. Vero magni perspiciatis minus quo provident eos amet odio quaerat odit, cum delectus aliquid!
+                        </P>
+                        <div class="botones">
+                            <a href="#" class="btn-1">Compras</a>
+                            <a href="#" class="btn-1">Menu</a>
+                        </div>
+                    </div>
+                    <div class="slider-img">
+                        <img src="Imagenes/habas_huevos.png" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider">
+                    <div class="slider-txt">
+                        <h1>TAPER</h1>
+                        <P>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi dolorum alias dicta? Dolores, suscipit delectus. Vero magni perspiciatis minus quo provident eos amet odio quaerat odit, cum delectus aliquid!
+                        </P>
+                        <div class="botones">
+                            <a href="#" class="btn-1">Compras</a>
+                            <a href="#" class="btn-1">Menu</a>
+                        </div>
+                    </div>
+                    <div class="slider-img">
+                        <img src="Imagenes/taper_huevo.png" alt="">
+                    </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div>
+  
   </div>
+
+  <main class="products">
+    <div class="tabs container">
+
+        <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" Value="1">
+        <label for="tab1">HUEVOS PAJEROS</label>
+
+        <div class="tab">
+          <div class="swiper mySwiper-2" id="swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+
+                  <div class="product">
+
+                  </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+  </main>
 
 <!--PARTE DE LAS OFERTAS-->
 <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
