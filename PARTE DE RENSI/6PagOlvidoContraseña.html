@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granja Korian</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function togglePostalCodeField() {
+            const postalCodeField = document.getElementById("postalCodeField");
+            if (document.getElementById("optionCorreo").checked) {
+                postalCodeField.style.display = "none";
+            } else {
+                postalCodeField.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body class="h-full">
     <div class="min-h-full">
@@ -13,7 +23,7 @@
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
                     <div class="flex-shrink-0">
-                    <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                    <img class="h-10 w-full" src="Imagenes/LogoOfi.png" alt="Your Company">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -110,57 +120,39 @@
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Configuracion</a>
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Cerrar Sesion</a>
             </div>
-         </div>
         </div>
-        </nav>
-        <main>
-            <div class="bg-gray-100">
-                <div class="flex justify-center items-center h-screen">
-                    <div class="bg-white rounded-lg shadow-md p-8">
-                        <div class="flex items-center mb-4">
-                            <img src="Imagenes/usuario2.png" alt="Usuario" class="w-16 h-16 rounded-full mr-4">
-                            <div>
-                                <h2 class="text-lg font-semibold">Leonel Messi</h2>
-                                <p class="text-gray-600">QUE MIRAS; BOBO</p>
-                                <p class="text-gray-600">Anda pa ya</p>
-                                <p class="text-gray-600">Omarcito_el_espantaviejitas@gmail.com</p>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Mis Pedidos</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <img src="Imagenes/haba_Huevo.png" alt="Pedido 1" class="w-16 h-16 rounded-lg">
-                                <div class="ml-4">
-                                    <p class="text-gray-600">Pedido #12345</p>
-                                    <p class="text-gray-600">Fecha de Compra: 01/08/2023</p>
-                                    <p class="text-gray-600">Descripción: Huevos de Codorniz</p>
-                                    <p class="text-gray-600">Por Millar</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="Images/taper_huevo.png" alt="Pedido 2" class="w-16 h-16 rounded-lg">
-                                <div class="ml-4">
-                                    <p class="text-gray-600">Pedido #67890</p>
-                                    <p class="text-gray-600">Fecha de Compra: 02/08/2023</p>
-                                    <p class="text-gray-600">Descripción: Huevos de Codorniz</p>
-                                    <p class="text-gray-600">Por Taper</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="Imagenes/malla_huevo.jpg" alt="Pedido 2" class="w-16 h-16 rounded-lg">
-                                <div class="ml-4">
-                                    <p class="text-gray-600">Pedido #67890</p>
-                                    <p class="text-gray-600">Fecha de Compra: 02/08/2023</p>
-                                    <p class="text-gray-600">Descripción: Huevos de Codorniz</p>
-                                    <p class="text-gray-600">Por Malla</p>
-                                </div>
-                            </div>
-                            <!-- Puedes agregar más pedidos aquí -->
+      </div>
+    </nav>
+    <main>
+    <div class="bg-gray-100">
+        <div class="flex justify-center items-center h-screen">
+            <div class="max-w-md w-full mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Olvido de Contraseña</h2>
+                    <div class="space-y-2">
+                        <label class="block font-medium text-gray-600">Selecciona una opción:</label>
+                        <div class="flex items-center space-x-4">
+                            <label class="flex items-center">
+                                <input type="radio" id="optionCorreo" name="option" class="text-blue-500 form-radio" value="correo" onchange="togglePostalCodeField()">
+                                <span class="ml-2">Correo Electrónico</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" id="optionTelefono" name="option" class="text-blue-500 form-radio" value="telefono" onchange="togglePostalCodeField()">
+                                <span class="ml-2">Número Telefónico</span>
+                            </label>
                         </div>
                     </div>
+                    <div class="space-y-2">
+                        <label class="block font-medium text-gray-600">Correo Electrónico o Número Telefónico:</label>
+                        <input type="text" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200">
+                    </div>
+                    <div class="space-y-2" id="postalCodeField">
+                        <label class="block font-medium text-gray-600">Código Postal:</label>
+                        <input type="text" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200">
+                    </div>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 w-full">Enviar Código</button>
                 </div>
-            </div>    
-        </main>
-    </div>
+            </div>
+        </div>
 </body>
 </html>
