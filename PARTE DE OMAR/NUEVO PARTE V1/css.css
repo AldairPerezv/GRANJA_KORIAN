@@ -64,3 +64,60 @@
     background-color: #fff;
     color: #333;
   }
+
+  .banner2 {
+    position: relative;
+    widows: 100%;
+    height: calc(108vh - 50px);
+    background-image: url(./IMAGENES/BANNER\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    block-size: cover;
+  }
+
+  .capa2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:none;
+  }
+
+  .contenido2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .contenido2 h1{
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  .contenido2 p{
+    margin: 20px;
+    font-size: 18px;
+  }
+
+  .contenido2 .button{
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    transition: all .3s ease-in-out;
+    width: 150px;
+  }
+
+  .contenido2 .button:hover{
+    background-color: #fff;
+    color: #333;
+  }
