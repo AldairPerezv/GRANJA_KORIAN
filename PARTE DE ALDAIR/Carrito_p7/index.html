@@ -80,12 +80,10 @@
                   <label for="Quantity" class="sr-only"> Quantity </label>
                 
                   <div class="flex items-center border border-gray-200 rounded">
-                    <button
-                      type="button"
-                      class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                    >
-                      &minus;
+                    <button type="button" class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75 decrement-button">
+                    &minus;
                     </button>
+
                 
                     <input
                       type="number"
@@ -94,11 +92,8 @@
                       class="h-10 w-16 border-transparent text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
                     />
                 
-                    <button
-                      type="button"
-                      class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                    >
-                      &plus;
+                    <button type="button" class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75 increment-button">
+                    &plus;
                     </button>
                   </div>
               </div>
@@ -134,11 +129,8 @@
                   <label for="Quantity" class="sr-only"> Quantity </label>
                 
                   <div class="flex items-center border border-gray-200 rounded">
-                    <button
-                      type="button"
-                      class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                    >
-                      &minus;
+                    <button type="button" class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75 decrement-button">
+                    &minus;
                     </button>
                 
                     <input
@@ -148,11 +140,8 @@
                       class="h-10 w-16 border-transparent text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
                     />
                 
-                    <button
-                      type="button"
-                      class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                    >
-                      &plus;
+                    <button type="button" class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75 increment-button">
+                    &plus;
                     </button>
                   </div>
               </div>
@@ -187,13 +176,9 @@
                 <label for="Quantity" class="sr-only"> Quantity </label>
               
                 <div class="flex items-center border border-gray-200 rounded">
-                  <button
-                    type="button"
-                    class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                  >
-                    &minus;
+                  <button type="button" class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75 decrement-button">
+                  &minus;
                   </button>
-              
                   <input
                     type="number"
                     id="Quantity"
@@ -201,11 +186,8 @@
                     class="h-10 w-16 border-transparent text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
                   />
               
-                  <button
-                    type="button"
-                    class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-                  >
-                    &plus;
+                  <button type="button" class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75 increment-button">
+                  &plus;
                   </button>
                 </div>
             </div>
@@ -267,6 +249,39 @@
       </div>
     </div>
   </div>
+  <script>
+    // Función para incrementar la cantidad de productos
+    function incrementQuantity(inputElement) {
+      const currentQuantity = parseInt(inputElement.value);
+      inputElement.value = currentQuantity + 1;
+    }
+  
+    // Función para decrementar la cantidad de productos
+    function decrementQuantity(inputElement) {
+      const currentQuantity = parseInt(inputElement.value);
+      if (currentQuantity > 1) {
+        inputElement.value = currentQuantity - 1;
+      }
+    }
+  
+    // Agregar eventos a los botones de sumar y restar
+    const incrementButtons = document.querySelectorAll('.increment-button');
+    const decrementButtons = document.querySelectorAll('.decrement-button');
+  
+    incrementButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const inputElement = button.parentNode.querySelector('input');
+        incrementQuantity(inputElement);
+      });
+    });
+  
+    decrementButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const inputElement = button.parentNode.querySelector('input');
+        decrementQuantity(inputElement);
+      });
+    });
+  </script>
 </section>
   
 </body>
